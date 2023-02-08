@@ -20,7 +20,13 @@ zweite Zeile
 #include <stdio.h>
 
 ```
-Codeblock
+ public void preOrder(Node knoten) {
+        if (knoten != null) {
+            System.out.print(knoten.getData() + ", ");
+            preOrder(knoten.left);
+            preOrder(knoten.right);
+        }
+    }
 ```
 
 ------
